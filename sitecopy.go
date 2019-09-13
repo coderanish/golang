@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-	"net/http"
-	
+	"net/http"	
 )
 func redirect(w http.ResponseWriter, r *http.Request) {
-
-    http.Redirect(w, r, "http://www.google.com",101)
+	http.Redirect(w, r, "http://www.google.com",101)
 }
 
 func ping(w http.ResponseWriter, r *http.Request) {
